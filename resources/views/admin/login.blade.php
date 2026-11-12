@@ -1,0 +1,8 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Masuk Penjual — KriukKita</title><link rel="stylesheet" href="{{ asset('assets/css/kriuk.css') }}"><link rel="stylesheet" href="{{ asset('assets/css/admin.css') }}"></head><body>
+<main class="login-wrap"><form method="POST" action="{{ route('admin.login.post') }}" class="login-card">@csrf
+<div class="brand-small"><span class="logo-mark"><svg width="24" height="24" viewBox="0 0 28 28" fill="none"><ellipse cx="14" cy="15" rx="9" ry="7" transform="rotate(-14 14 15)" fill="#fff3df" stroke="#242019" stroke-width="2"/><path d="M9 14Q14 11 19 14" stroke="#cf491e" stroke-width="2"/></svg></span><b>Kriuk<span style="color:var(--orange)">Kita.</span></b></div>
+<span class="smallcaps">Portal Penjual</span><h1>Selamat datang kembali.</h1><p class="muted">Masuk untuk mengelola produk, pesanan online, kasir, dan laporan penjualan.</p>
+@if($errors->any())<div class="error">{{ $errors->first() }}</div>@endif
+<div class="field"><label>Email Penjual</label><input type="email" class="input" name="email" value="{{ old('email') }}" required autofocus autocomplete="username" placeholder="Email akun penjual"></div>
+<div class="field"><label>Kata Sandi</label><input type="password" class="input" name="password" required autocomplete="current-password" placeholder="Masukkan kata sandi"></div>
+<button class="btn btn-primary wide" type="submit">Masuk ke Panel Penjual</button><p style="text-align:center;margin-top:22px"><a href="{{ route('store.home') }}" class="link">← Kembali ke toko</a></p></form></main></body></html>
