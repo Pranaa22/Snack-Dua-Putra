@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="csrf-token" content="{{ csrf_token() }}"><meta name="theme-color" content="#faf7f1"><title>KriukKita — Keripik Lokal, Rasa Juara</title>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="csrf-token" content="{{ csrf_token() }}"><meta name="theme-color" content="#faf7f1"><title>Snack Dua Putra — Keripik Lokal, Rasa Juara</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Fraunces:ital,opsz,wght@1,9..144,700;1,9..144,800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{ asset('assets/css/kriuk.css') }}"></head><body>
@@ -15,16 +15,11 @@
 <!-- STICKY HEADER -->
 <header class="head" id="atas">
   <nav class="container nav">
-    <a class="logo" href="#atas" aria-label="KriukKita beranda">
+    <a class="logo" href="#atas" aria-label="Snack Dua Putra beranda">
       <span class="logo-mark">
-        <svg width="24" height="24" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <ellipse cx="14" cy="15" rx="9.5" ry="7" transform="rotate(-14 14 15)" fill="#FFF3DF" stroke="#242019" stroke-width="2"/>
-          <path d="M9.5 14C12.5 12.5 15.5 12.5 18.5 14" stroke="#CF491E" stroke-width="2" stroke-linecap="round"/>
-          <path d="M11 17C13.2 16 15.5 16 17.5 17" stroke="#242019" stroke-width="1.8" stroke-linecap="round"/>
-          <circle cx="20" cy="7" r="2" fill="#FFF3DF"/>
-        </svg>
+        <img src="{{ asset('assets/img/logo.png') }}" alt="Snack Dua Putra" style="width:28px;height:28px;object-fit:contain;display:block">
       </span>
-      <span id="dynamic-brand-logo">Kriuk<span class="orange">Kita.</span></span>
+      <span id="dynamic-brand-logo">Snack <span class="orange">Dua Putra.</span></span>
     </a>
 
     <div class="navlinks">
@@ -273,9 +268,9 @@
       <div>
         <a class="logo" href="#atas">
           <span class="logo-mark">
-            <svg width="22" height="22" viewBox="0 0 28 28" fill="none"><ellipse cx="14" cy="15" rx="9.5" ry="7" transform="rotate(-14 14 15)" fill="#FFF3DF" stroke="#242019" stroke-width="2"/><path d="M9.5 14C12.5 12.5 15.5 12.5 18.5 14" stroke="#CF491E" stroke-width="2" stroke-linecap="round"/></svg>
+            <img src="{{ asset('assets/img/logo.png') }}" alt="Snack Dua Putra" style="width:26px;height:26px;object-fit:contain;display:block">
           </span>
-          <span>Kriuk<span class="orange">Kita.</span></span>
+          <span>Snack <span class="orange">Dua Putra.</span></span>
         </a>
         <p>Keripik pilihan dengan rasa khas Nusantara, untuk dinikmati kapan saja. Pilih varian kesukaanmu, kami bantu siapkan pesanan dengan mudah.</p>
       </div>
@@ -288,7 +283,7 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© {{ date('Y') }} KriukKita • Keripik Lokal, Rasa Juara</span>
+      <span>© {{ date('Y') }} Snack Dua Putra • Keripik Lokal, Rasa Juara</span>
       <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap">
         
         <a href="{{ route('admin.login') }}" style="color:#fff;font-weight:700">Masuk Penjual</a>
